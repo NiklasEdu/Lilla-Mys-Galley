@@ -6,6 +6,50 @@
     scroll-behavior: smooth;
   }
 
+  header nav{
+    float: right;
+    margin-right: 20px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    margin-right: 30px;
+    min-width: 450px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: 0 0 5px white;
+}
+
+.active{
+    background: teal;
+    border-radius: 20pc;
+}
+
+a:hover{
+    color: turquoise;
+}
+
+nav form{
+    height: 30px;
+    min-width: 300px;
+    margin: 10px 0;
+}
+
 h1 {
     color: white;
     text-shadow: 0 0 5px white;
