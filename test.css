@@ -1,0 +1,50 @@
+*{
+    background-color: #ff9900;
+    image-rendering: auto;
+}
+
+.ID1{
+    height: 1000px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+    /* transform: scale(0.5) translate(-100%, -100%); */
+    
+}
+
+#ID2:hover{
+    transition: transform 5.5s;
+    transform: scale(1.5);
+    transition: scale(3);
+}
+
+#IMGID{
+    
+
+            width: 1000px;  
+            height: 100%;
+            object-fit: none;
+            object-position: center center;
+            transform: scale(3);
+            /* String value */
+
+            
+
+
+                /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+    }
+
+#ID2.active{
+    animation: fade 5s ease;
+
+}
+
+ @keyframes fade {
+     0% {
+         opacity: 0.2;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
