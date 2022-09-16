@@ -343,6 +343,13 @@ form button {
 
 }
 
+span#close{
+/* position:absolute; */
+float:right;
+font-size: 50px;
+cursor: pointer;
+}
+
 
 /* .container .popup-image-title-comment-rating .image-title-comment-rating span{
 
@@ -451,7 +458,7 @@ i {
 
 .popup-edit-title span {
 color: white;
-/* cursor: pointer; */
+cursor: pointer;
 }
 
 
