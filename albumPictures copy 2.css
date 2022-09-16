@@ -122,7 +122,7 @@ form input{
   outline: none;
 }
 
-form button{
+form button {
   width: 50px;
   height: 100%;
   border: 1px solid teal;
@@ -196,6 +196,16 @@ form button{
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
+
+/* @-webkit-keyframes ease-in-out {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes ease-in-out {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+} */
 
 .container .popup-image span{
   position: absolute;
@@ -332,6 +342,8 @@ form button{
   text-shadow: 0 0 5px white;
 
 }
+
+
 /* .container .popup-image-title-comment-rating .image-title-comment-rating span{
 
   margin-left: 42%;
@@ -354,44 +366,279 @@ form button{
 } */
 
 .title{
+  align-items: center;
+  text-align: center;
   font-size: x-large;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 
 .comment{
+  align-items: center;
+  text-align: center;
   font-size: medium;
   /* cursor: pointer; */
 }
 
 .rating{
+  align-items: center;
+  text-align: center;
   font-size: medium;
   /* cursor: pointer; */
 }
 
 .container .popup-image-title-comment-rating img {
-
   position: relative;
   left: 28%;
-
   height: 300px;
   width: 500px;
-
 }
 
-.popup-edit-attribute{
 
-  margin-top: 0%;
-  margin-left: 50%;
-  display: none;
-  height: 100px;
-  width: 300px;
-  background-color: white;  
-  border: #fff;
+i {
   cursor: pointer;
-  overflow: visible
+}
+
+/* TITLE---------------------------------------------------------------------------------------------------------------- */
+
+.popup-edit-title{
+
+  margin-top: -20%;
+  margin-left: 40%;
+  position: relative;
+  /* display: inline-block; */
+  display: none;
+  height: 200px;
+  width: 300px;
+  border-radius: 5%;
+  background-color:#07060dd1;
+  border: #fff;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  /* transition: all .5s ease-in-out; */
+  /* display: block; */
+  /* cursor: pointer; */
+  /* overflow: visible */
+}
+
+
+.popup-edit-title input {
+
+  height: 50px;
+  width: 100%;
+  background-color:#0f1829;
+  /* border: 1px solid teal;
+  background: #0007;
+  padding: 0 5px;
+  color: white; */
+  /* outline: none; */
+}
+
+.popup-edit-title label {
+  color: white;
 
 }
+
+.popup-edit-title button {
+  
+  margin-left: 40%;
+  height: 30px;
+  width: 50px;  
+  background-color:#0f1829;
+}
+
+.popup-edit-title span {
+color: white;
+/* cursor: pointer; */
+}
+
+
+
+.popup-edit-title form{
+  height: 200px;
+  width: 300px;
+}
+
+/* .popup-edit-attribute form button{
+  width: 50px;
+  height: 100px;
+  border: 1px solid teal;
+  background: #0007;
+  color:white;
+  cursor: pointer;
+} */
+
+
+.popup-image-title-comment-rating .fa_fa-edit{
+  /* cursor: pointer; */
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+
+
+
+/* COMMENT ---------------------------------------------------------------------------------------------------------------------*/
+
+.popup-edit-comment{
+
+  margin-top: -20%;
+  margin-left: 40%;
+  position: relative;
+  /* display: inline-block; */
+  display: none;
+  height: 200px;
+  width: 300px;
+  border-radius: 5%;
+  background-color:#07060dd1;
+  border: #fff;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  /* transition: all .5s ease-in-out; */
+  /* display: block; */
+  /* cursor: pointer; */
+  /* overflow: visible */
+}
+
+
+.popup-edit-comment input {
+
+  height: 50px;
+  width: 100%;
+  background-color:#0f1829;
+  /* border: 1px solid teal;
+  background: #0007;
+  padding: 0 5px;
+  color: white; */
+  /* outline: none; */
+}
+
+.popup-edit-comment label {
+  color: white;
+
+}
+
+.popup-edit-comment button {
+  
+  margin-left: 40%;
+  height: 30px;
+  width: 50px;  
+  background-color:#0f1829;
+}
+
+.popup-edit-comment span {
+color: white;
+cursor: pointer;
+}
+
+
+
+.popup-edit-comment form{
+  height: 200px;
+  width: 300px;
+}
+
+/* .popup-edit-attribute form button{
+  width: 50px;
+  height: 100px;
+  border: 1px solid teal;
+  background: #0007;
+  color:white;
+  cursor: pointer;
+} */
+
+
+.popup-image-title-comment-rating .fa_fa-edit{
+  cursor: pointer;
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+
+/* RATING ----------------------------------------------------------------------------------------------------------------------*/
+
+.popup-edit-rating{
+
+  margin-top: -20%;
+  margin-left: 40%;
+  position: relative;
+  /* display: inline-block; */
+  display: none;
+  height: 200px;
+  width: 300px;
+  border-radius: 5%;
+  background-color:#07060dd1;
+  border: #fff;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  /* transition: all .5s ease-in-out; */
+  /* display: block; */
+  /* cursor: pointer; */
+  /* overflow: visible */
+}
+
+
+.popup-edit-rating input {
+
+  height: 50px;
+  width: 100%;
+  background-color:#0f1829;
+  /* border: 1px solid teal;
+  background: #0007;
+  padding: 0 5px;
+  color: white; */
+  /* outline: none; */
+}
+
+.popup-edit-rating label {
+  color: white;
+
+}
+
+.popup-edit-rating button {
+  
+  margin-left: 40%;
+  height: 30px;
+  width: 50px;  
+  background-color:#0f1829;
+}
+
+.popup-edit-rating span {
+color: white;
+cursor: pointer;
+}
+
+
+
+.popup-edit-rating form{
+  height: 200px;
+  width: 300px;
+}
+
+/* .popup-edit-attribute form button{
+  width: 50px;
+  height: 100px;
+  border: 1px solid teal;
+  background: #0007;
+  color:white;
+  cursor: pointer;
+} */
+
+
+.popup-image-title-comment-rating .fa_fa-edit{
+  cursor: pointer;
+  color: white;
+  height: 24px;
+  width: 24px;
+}
+
+
 
 @media screen and (max-width: 800px) {
   .popup-image-title-comment-rating{
