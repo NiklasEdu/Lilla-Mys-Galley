@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="albumPictures copy 2.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="big-container">
+  <div class="container">
+
+    <header>
+      <div class="logo">
+          <h1>Gallery</h1>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a>
+              <li><a href="#">About</a>
+              <li><a href="#">Contact</a>
+              <li><a href="albumPage.html" class="active">Slide Show</a>
+              </li>
+          </ul>
+          <form>
+          <input type="text" name="search" id="search"
+          required placeholder="Enter your search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      </nav>
+  </header>
+
+
+    <div class="image-container">
+
+      <div class="image"><img src="images\img1.jpg" alt=""></div>
+      <div class="image"><img src="images\img2.jpg" alt=""></div>
+      <div class="image"><img src="images\img3.jpg" alt=""></div>
+      <!-- <div class="image"><img src="images\img5.jpg" alt=""></div>
+      <div class="image"><img src="images\img6.jpg" alt=""></div>
+      <div class="image"><img src="images\img7.jpg" alt=""></div>
+      <div class="image"><img src="images\img8.jpg" alt=""></div>
+      <div class="image"><img src="images\img9.jpg" alt=""></div>
+      <div class="image"><img src="images\img10.jpg" alt=""></div> -->
+
+    </div>
+
+    <div class="popup-image">
+      <span>&times;</span>
+        <i class="fa fa-edit"></i>
+      <img src="" alt="">
+    </div>
+
+    <div class="popup-image-title-comment-rating">
+        <!-- <div class="title-comment-rating"> -->
+      <!-- <form action="/"> -->
+        <img src="images\img1.jpg" alt="">
+        <br>
+        <!-- <label class="title">Title: <br> Space 1<i class="fa fa-edit"></i></label> -->
+        <span class="title">Title: <i class="fa fa-edit"></i> <br> Space 1</span>
+        <br>
+        <!-- <label class="comments">Comments: <br> Here we have space 1<i class="fa fa-edit"></i></label> -->
+        <span class="comments">Comments: <i class="fa fa-edit"></i> <br> Here we have space 1</span>
+        <br>
+        <!-- <label class="rating">Rating: <br> 5<i class="fa fa-edit"></i></label> -->
+        <span class="rating">Rating: <i class="fa fa-edit"></i> <br> 5</span>
+      <!-- </form> -->
+      <!-- </div> -->
+    </div>
+
+    <div class="popup-edit-attribute">
+      <span>&times;</span>
+      <form action="/">
+        <label for="title">Title:</label><br>
+        <input type="text" id="tile" name="title" value=""><br>      
+      </form>
+    </div>
+
+    
+  </div>  
+  </div>
+  
+
+  <script src="albumPictures copy 2.js"></script>
+  
+</body>
+</html>
