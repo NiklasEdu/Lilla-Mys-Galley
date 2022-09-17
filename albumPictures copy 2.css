@@ -20,14 +20,9 @@ body {
   background: linear-gradient(110deg, #0f1829, #050218)
 }
 
-/* .image:hover {
-  opacity: 0.7;
-} */
-
 .big-container{
   width: 100%;
   height: 96vh;
-  /* max-width: 1200px; */
   max-width: 100%;
   position: absolute;
   top: 50%;
@@ -43,12 +38,6 @@ body {
 @keyframes fade{
   to{opacity: 1;}
 }
-
-/* .container{
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-} */
 
 header{
   min-height: 60px;
@@ -131,10 +120,6 @@ form button {
   cursor: pointer;
 }
 
-
-
-
-/*  */
 .container {
   position: relative;
   min-height: 100vh;
@@ -151,7 +136,6 @@ form button {
 .container .image-container .image{
   height: 300px;
   width: 300px;
-  /* border: 10px solid white; */
   box-shadow: 0 5pc 15pc rgba(0,0,0,.1);
   overflow: hidden;
   cursor: pointer;
@@ -174,12 +158,9 @@ form button {
   position: fixed;
   top: 0;
   left: 0;
-  /* background-color: rgba(0 ,0 ,0 ,0.7); */
   height: 100%;
   width: 100%;
   z-index: 100;
-  /* animation: fade 2s ease-in-out forwards; */
-  /* -webkit-animation-name: ease-in-out fade; */
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -197,37 +178,21 @@ form button {
   to {transform:scale(1)}
 }
 
-/* @-webkit-keyframes ease-in-out {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes ease-in-out {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-} */
-
 .container .popup-image span{
   position: absolute;
   top: 0;
   right: 30px;
   cursor: pointer;
   font-size: 50px;
-  /* height: 200px;
-  width: 200px; */
   color: #fff;
 }
 
 .container .popup-image i{
   position: absolute;
-  /* top: 70px; */
-  /* right: 160px; */
   top: 50px;
   right: 25px;
   cursor: pointer;
   font-size: 35px;
-  /* height: 200px;
-  width: 200px; */
   color: #fff;
   object-fit: cover;
 }
@@ -248,7 +213,6 @@ form button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border: 5px solid white; */
   border-radius: 5px;
   width: 1000px;
   height: 600px;
@@ -257,31 +221,14 @@ form button {
 
 .popup-image-title-comment-rating {
   position: fixed;
-
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; */
-  /* top: 200px; */
-  /* left: 25%; */
-  /* background-color: rgba(0 ,0 ,0 ,0.7); */
-  /* height: 100%; */
   height: 600px;
-  /* width: 100%; */
   width: 1200px;
   top: 8%;
   left: 11%;
-
   background-color:#0f1829;
-  /* width: 100%;
-  height: 100%; */
   padding: 10px;
   border-radius: 3%;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-  /* border: 3px solid #f1f1f1; */
-  /* z-index: 100; */
-  /* animation: fade 2s ease-in-out forwards; */
-  /* -webkit-animation-name: ease-in-out fade; */
+  box-shadow: 0 0 10px rgb(37, 0, 138);
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -291,49 +238,7 @@ form button {
 
 }
 
-/* .container .popup-image-title-comment-rating { */
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s; */
-  /* display: none; */
-  /* position: fixed; */
-  /* height: 500px; */
-  /* width: 500px; */
-  /* bottom: 0; */
-  /* right: 15px; */
-  /* border: 3px solid #f1f1f1; */
-  /* z-index: 9; */
-/* } */
-
-/* .container .popup-image-title-comment-rating .image-title-comment-rating {
-  background-color:#0f1829;
-  width: 1200px;
-  height: 600%;
-  padding: 10px;
-  border-radius: 3%;
-  box-shadow: 0 0 10px rgb(255, 255, 255)
-
-} */
-
-/* .container .popup-image-title-comment-rating form {
-
-  background-color:#0f1829;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  border-radius: 3%;
-  box-shadow: 0 0 10px rgb(255, 255, 255)
-} */
-
 .container .popup-image-title-comment-rating span{
-
   margin-left: 42%;
   color: white;
   padding: 8px 15px;
@@ -344,39 +249,15 @@ form button {
 }
 
 span#close{
-/* position:absolute; */
 float:right;
 font-size: 50px;
 cursor: pointer;
 }
 
-
-/* .container .popup-image-title-comment-rating .image-title-comment-rating span{
-
-  margin-left: 42%;
-  color: white;
-  padding: 8px 15px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-shadow: 0 0 5px white;
-
-} */
-/* .container .popup-image-title-comment-rating form label{
-
-  margin-left: 42%;
-  color: white;
-  padding: 8px 15px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-shadow: 0 0 5px white;
-
-} */
-
 .title{
   align-items: center;
   text-align: center;
   font-size: x-large;
-  /* cursor: pointer; */
 }
 
 
@@ -384,14 +265,12 @@ cursor: pointer;
   align-items: center;
   text-align: center;
   font-size: medium;
-  /* cursor: pointer; */
 }
 
 .rating{
   align-items: center;
   text-align: center;
   font-size: medium;
-  /* cursor: pointer; */
 }
 
 .container .popup-image-title-comment-rating img {
@@ -413,7 +292,6 @@ i {
   margin-top: -20%;
   margin-left: 40%;
   position: relative;
-  /* display: inline-block; */
   display: none;
   height: 200px;
   width: 300px;
@@ -424,10 +302,6 @@ i {
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
-  /* transition: all .5s ease-in-out; */
-  /* display: block; */
-  /* cursor: pointer; */
-  /* overflow: visible */
 }
 
 
@@ -436,11 +310,6 @@ i {
   height: 50px;
   width: 100%;
   background-color:#0f1829;
-  /* border: 1px solid teal;
-  background: #0007;
-  padding: 0 5px;
-  color: white; */
-  /* outline: none; */
 }
 
 .popup-edit-title label {
@@ -449,7 +318,6 @@ i {
 }
 
 .popup-edit-title button {
-  
   margin-left: 40%;
   height: 30px;
   width: 50px;  
@@ -468,18 +336,8 @@ cursor: pointer;
   width: 300px;
 }
 
-/* .popup-edit-attribute form button{
-  width: 50px;
-  height: 100px;
-  border: 1px solid teal;
-  background: #0007;
-  color:white;
-  cursor: pointer;
-} */
-
 
 .popup-image-title-comment-rating .fa_fa-edit{
-  /* cursor: pointer; */
   color: white;
   height: 24px;
   width: 24px;
@@ -494,7 +352,6 @@ cursor: pointer;
   margin-top: -20%;
   margin-left: 40%;
   position: relative;
-  /* display: inline-block; */
   display: none;
   height: 200px;
   width: 300px;
@@ -505,10 +362,6 @@ cursor: pointer;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
-  /* transition: all .5s ease-in-out; */
-  /* display: block; */
-  /* cursor: pointer; */
-  /* overflow: visible */
 }
 
 
@@ -517,11 +370,6 @@ cursor: pointer;
   height: 50px;
   width: 100%;
   background-color:#0f1829;
-  /* border: 1px solid teal;
-  background: #0007;
-  padding: 0 5px;
-  color: white; */
-  /* outline: none; */
 }
 
 .popup-edit-comment label {
@@ -549,15 +397,6 @@ cursor: pointer;
   width: 300px;
 }
 
-/* .popup-edit-attribute form button{
-  width: 50px;
-  height: 100px;
-  border: 1px solid teal;
-  background: #0007;
-  color:white;
-  cursor: pointer;
-} */
-
 
 .popup-image-title-comment-rating .fa_fa-edit{
   cursor: pointer;
@@ -573,7 +412,6 @@ cursor: pointer;
   margin-top: -20%;
   margin-left: 40%;
   position: relative;
-  /* display: inline-block; */
   display: none;
   height: 200px;
   width: 300px;
@@ -584,10 +422,6 @@ cursor: pointer;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
-  /* transition: all .5s ease-in-out; */
-  /* display: block; */
-  /* cursor: pointer; */
-  /* overflow: visible */
 }
 
 
@@ -596,11 +430,6 @@ cursor: pointer;
   height: 50px;
   width: 100%;
   background-color:#0f1829;
-  /* border: 1px solid teal;
-  background: #0007;
-  padding: 0 5px;
-  color: white; */
-  /* outline: none; */
 }
 
 .popup-edit-rating label {
@@ -628,16 +457,6 @@ cursor: pointer;
   width: 300px;
 }
 
-/* .popup-edit-attribute form button{
-  width: 50px;
-  height: 100px;
-  border: 1px solid teal;
-  background: #0007;
-  color:white;
-  cursor: pointer;
-} */
-
-
 .popup-image-title-comment-rating .fa_fa-edit{
   cursor: pointer;
   color: white;
@@ -647,7 +466,7 @@ cursor: pointer;
 
 
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .popup-image-title-comment-rating{
     width: 100%; 
   }
@@ -663,9 +482,9 @@ cursor: pointer;
   .popup-image-title-comment-rating{
     width: 50%; 
   }
-}
+} */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .container .popup-image-title-comment-rating img{
     width: 100%; 
   }
@@ -681,6 +500,6 @@ cursor: pointer;
   .container .popup-image-title-comment-rating img{
     width: 30%; 
   }
-}
+} */
 
 
