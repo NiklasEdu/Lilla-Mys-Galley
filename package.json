@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lightgallery": "^2.6.1",
+    "vue-select-image": "^1.9.0"
+  }
+}

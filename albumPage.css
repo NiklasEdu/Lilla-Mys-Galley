@@ -42,6 +42,7 @@ a{
 
 a:hover{
     color: turquoise;
+    opacity: 1;
 }
 
 nav form{
@@ -98,7 +99,9 @@ body {
 
 .content{
     grid-column: auto / span 2;
-  }
+}
+
+
 /*
 img{
     /* display: block; */
