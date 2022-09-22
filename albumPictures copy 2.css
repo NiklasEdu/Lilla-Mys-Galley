@@ -28,7 +28,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 20px #000;
   animation: fade 3s ease-in-out forwards;
@@ -58,19 +57,20 @@ header .logo{
 }
 
 header nav{
-  float: right;
-  margin-right: 200px;
+  /* float: right; */
+  /* margin-right: 200px; */
   min-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
 }
 
-nav ul{
+/* nav ul{
   margin-right: 30px;
   min-width: 450px;
-}
+} */
 
 nav ul li{
   list-style: none;
@@ -88,8 +88,35 @@ a{
 
 .active{
   background: teal;
-  border-radius: 20pc;
+  border-radius: 20px;
+  cursor: pointer;
 }
+button.active{
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  }
+
+.image .btn{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  /* overflow: auto; */
+  /* display: none; */
+
+}
+
+.img-btn {
+  display: block;
+}
+
+.btn:hover{
+color: turquoise;
+}
+
 
 a:hover{
   color: turquoise;
@@ -98,6 +125,8 @@ a:hover{
 nav form{
   height: 30px;
   min-width: 300px;
+  /* max-height: 100%;
+  max-width: 100%; */
   margin: 10px 0;
 }
 
@@ -217,15 +246,20 @@ form button {
   width: 1000px;
   height: 600px;
   object-fit: cover;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .popup-image-title-comment-rating {
   position: fixed;
-  height: 600px;
-  width: 1200px;
+  height: 80%;
+  width: 85%;
   top: 8%;
-  left: 11%;
-  background-color:#0f1829;
+  left: 8%;
+  /* background-color:#0f1829; */
+  background: linear-gradient(110deg, #0f1829, #050218);
   padding: 10px;
   border-radius: 3%;
   box-shadow: 0 0 10px rgb(37, 0, 138);
@@ -238,7 +272,7 @@ form button {
 
 }
 
-.container .popup-image-title-comment-rating span{
+.container .popup-image-title-comment-rating .edit{
   margin-left: 42%;
   color: white;
   padding: 8px 15px;
@@ -249,35 +283,58 @@ form button {
 }
 
 span#close{
-float:right;
-font-size: 50px;
-cursor: pointer;
+  color: white;
+  font-size: 50px;
+  right: 50px;
+  cursor: pointer;
+  max-height: 50px;
+  max-width: 50px;
+  position: absolute;
+  margin: 55px -25px -27px 0px;
+  margin-top: -20px;
 }
 
 .title{
-  align-items: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-shadow: 0 0 5px white;  align-items: center;
   text-align: center;
   font-size: x-large;
 }
 
 
-.comment{
+.comments{
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-shadow: 0 0 5px white;
   align-items: center;
   text-align: center;
   font-size: medium;
 }
 
 .rating{
-  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-shadow: 0 0 5px white;  align-items: center;
   text-align: center;
   font-size: medium;
 }
 
 .container .popup-image-title-comment-rating img {
   position: relative;
-  left: 28%;
-  height: 300px;
-  width: 500px;
+    left: 20%;
+    height: 59%;
+    width: 58%;
 }
 
 
@@ -306,7 +363,6 @@ i {
 
 
 .popup-edit-title input {
-
   height: 50px;
   width: 100%;
   background-color:#0f1829;
@@ -426,7 +482,6 @@ cursor: pointer;
 
 
 .popup-edit-rating input {
-
   height: 50px;
   width: 100%;
   background-color:#0f1829;
@@ -438,7 +493,6 @@ cursor: pointer;
 }
 
 .popup-edit-rating button {
-  
   margin-left: 40%;
   height: 30px;
   width: 50px;  
@@ -462,6 +516,34 @@ cursor: pointer;
   color: white;
   height: 24px;
   width: 24px;
+}
+
+
+.slide-shadow {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+
+@media (max-width: 1000px){
+  header .logo,
+  header nav{
+      width: 100%;
+      margin: 0;
+      text-align: center;
+  }
+}
+
+@media (max-width: 850px){
+  nav ul{
+      min-width: 300px;
+      margin: 0;
+      align-items: center;
+  }
+  nav ul a{
+      padding: 5px 10px;
+  }
 }
 
 

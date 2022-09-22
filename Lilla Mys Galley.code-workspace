@@ -1,11 +1,10 @@
 {
-    "launch": {
-        "version": "0.2.0",
-        "configurations": []
-    },
-    "folders": [
-        {
-            "path": "."
-        }
-    ]
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5500
+	}
 }

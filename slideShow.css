@@ -1,0 +1,251 @@
+*{
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+.container h1 {
+color: white;
+text-shadow: 0 0 5px white;
+text-transform: uppercase;
+font-size: 3em;
+letter-spacing: 10px;
+text-align: center;
+}
+
+body {
+min-height: 100vh;
+background: linear-gradient(110deg, #0f1829, #050218);
+}
+
+header{
+min-height: 60px;
+width: 100%;
+border-bottom: #fff8;
+overflow: hidden;
+animation: fade 2s ease-in-out forwards;
+animation-delay: 1s;
+opacity: 0;
+}
+
+header .logo{
+color: white;
+text-transform: uppercase;
+letter-spacing: 4px;
+line-height: 60px;
+text-shadow: 0 0 5px white;
+}
+
+header nav{
+/* float: right; */
+/* margin-right: 200px; */
+min-height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* flex-wrap: wrap; */
+flex-direction: column;
+}
+
+nav ul{
+/* margin-right: 30px; */
+min-width: 450px;
+text-align: center;
+}
+
+nav ul li{
+list-style: none;
+display: inline-block;
+}
+
+a{
+text-decoration: none;
+color: white;
+padding: 8px 15px;
+text-transform: uppercase;
+display: inline-block;
+text-shadow: 0 0 5px white;
+}
+
+.active{
+background: teal;
+border-radius: 20px;
+cursor: pointer;
+}
+
+a:hover{
+color: turquoise;
+}
+
+nav form{
+height: 30px;
+min-width: 300px;
+/* max-height: 100%;
+max-width: 100%; */
+margin: 10px 0;
+}
+
+form input{
+height: 100%;
+width: 250px;
+border: 1px solid teal;
+background: #0007;
+padding: 0 5px;
+color: white;
+outline: none;
+}
+
+form button {
+width: 50px;
+height: 100%;
+border: 1px solid teal;
+background: #0007;
+color:white;
+cursor: pointer;
+
+}
+
+/* .slideShow {
+text-decoration: none;
+color: white;
+padding: 8px 15px;
+text-transform: uppercase;
+display: inline-block;
+text-shadow: 0 0 5px white;
+} */
+
+button.active{
+text-decoration: none;
+color: white;
+padding: 8px 15px;
+text-transform: uppercase;
+display: inline-block;
+}
+
+button.active:hover{
+    color: turquoise;
+}
+
+/* .container {
+position: relative;
+min-height: 100vh;
+} */
+
+.container{
+width: 100%;
+height: 96vh;
+max-width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0 0 20px #000;
+animation: fade 3s ease-in-out forwards;
+opacity: 0;
+}
+
+@keyframes fade{
+to{opacity: 1;}
+}
+
+.container .image-container {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+justify-content: center;
+padding: 10px;
+}
+
+.container .image-container .image{
+height: 100px;
+width: 100px;
+box-shadow: 0 5pc 15pc rgba(0,0,0,.1);
+/* border-radius: 50px; */
+/* overflow: hidden; */
+cursor: pointer;
+}
+
+/* button{
+    color: darkblue;
+} */
+
+/* .container .image-container .image-button{
+height: 100px;
+width: 100px;
+box-shadow: 0 5pc 15pc rgba(0,0,0,.1);
+border-radius: 50px;
+overflow: hidden;
+cursor: pointer;
+} */
+
+.container .image-container .image-btn{
+background: linear-gradient(110deg, #0f1829, #050218);
+border-radius: 50px;
+box-shadow: 0 0 16px #333;
+/* box-shadow: 0 0 16px rgb(0, 238, 255); */
+object-fit: cover;
+transition: .2s linear; 
+}
+
+.container .image-container .image img{
+height: 100%;
+width: 100%;
+border-radius: 50px;
+box-shadow: 0 0 16px #333;
+object-fit: cover;
+transition: .2s linear;
+}
+
+/* .image-btn .mySlides img{
+box-shadow: 0 0 16px #333;
+} */
+
+
+.slide-show-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slide-show-container span {
+    display: none;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 960px;
+    margin-top: -20px;
+    cursor: pointer;
+
+}
+
+
+/* .slide-show-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.slide-show-container img{
+    height: 300px;
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+} 
+
+.slide-show-container span {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 100px;
+    top: 150px;
+    display: none;
+} */
