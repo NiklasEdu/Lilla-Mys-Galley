@@ -1,19 +1,23 @@
 'using strict';
 
 const white = '0 0 16px #333';
+const none = 'none';
 const blue = '0 0 16px rgb(0, 238, 255)';
 const markedImage = 'image-marked';
 const unmarkedImage = 'mySlides';
-const marked = document.querySelectorAll('.image-btn');
+const marked = document.querySelectorAll('.' + unmarkedImage);
 
 for(let mark of marked) {
     mark.addEventListener('click', (mark) => {
-        let color = mark.target.style.boxShadow;
-        mark.target.style.boxShadow = (color === blue) ? white : blue;
+        
 
       let selected = mark.target.className;
       mark.target.className = (selected === markedImage) ? unmarkedImage : markedImage;
       console.log(selected);
+
+      let btnColor = mark.target.style.boxShadow;
+      mark.target.style.boxShadow = (btnColor === blue) ? none : blue;
+      console.log(btnColor);
     })
 }
 
