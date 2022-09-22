@@ -1,4 +1,4 @@
-'using strict';
+'use strict';
 
 const white = '0 0 16px #333';
 const none = 'none';
@@ -39,6 +39,7 @@ const hideImgs = document.querySelector('.image-container');
 
 
 function addSlideShow(markedImg) {
+  let i = 0;
   let counter = 1;
 
   for (i = 0; i < markedImg.length; i++) {
@@ -72,6 +73,7 @@ function playSlideShow() {
 function closeSlideShow() {
   document.querySelector('.slide-show-container span').addEventListener('click', () => {
     document.querySelector('.slide-show-container').setAttribute('style', 'display : none');
+    // document.querySelector('.slide-show-container span').setAttribute('style', 'display : none');
     document.querySelector('.image-container').setAttribute('style', 'display : block; display : flex; flex-wrap : wrap; justify-content : center;');
     document.querySelectorAll('.image-marked').forEach(img => {
       img.setAttribute('style', 'box-shadow : 0 0 16px #333');
