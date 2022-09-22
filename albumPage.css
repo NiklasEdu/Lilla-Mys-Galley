@@ -98,16 +98,17 @@ body {
   
   a:hover{
     color: turquoise;
-<<<<<<< HEAD
+
     opacity: 1;
 }
 
 nav form{
-=======
+  height: 1;
+
   }
   
   nav form{
->>>>>>> 31fbb5669a74b50619997c3d355037ce60fc3079
+
     height: 30px;
     min-width: 300px;
     margin: 10px 0;
@@ -163,7 +164,6 @@ img {
     width: 100%;
 }
 
-<<<<<<< HEAD
 .content{
     grid-column: auto / span 2;
 }
