@@ -1,32 +1,43 @@
 
+'use strict';
+
 //ZOOM POPUP IMAGES
 document.querySelectorAll('.image-container img').forEach(image => {
   image.onclick = () => {
     document.querySelector('.popup-image').style.display = 'block';
-    document.querySelector('.popup-image img').src = image.getAttribute('src');
+    document.querySelector('.popup-image img').src = image.getAttribute('srcset');
     document.querySelector('.big-container').setAttribute('style', 'overflow : hidden;')
 
-
-    document.querySelector('.popup-image span').onclick = () => {
-      document.querySelector('.popup-image').style.display = 'none';
-      document.querySelector('.big-container').setAttribute('style', 'overflow : visble;')
-    }
-    document.querySelector('.popup-image i').onclick = () => {
-    document.querySelectorAll('.image-container img').forEach(image => {
-      document.querySelector('.popup-image-title-comment-rating').src = image.getAttribute('src');
-    })
-    document.querySelector('.popup-image-title-comment-rating').setAttribute('style', 'display: flex; align-content: flex-start; justify-content: center; align-items: baseline; flex-direction: column; flex-wrap: nowrap;')
-
-    document.querySelector('.popup-image-title-comment-rating').style.display = 'block';
-      document.querySelector('.popup-image').style.display = 'none';
-    }
-    
-    document.querySelector('.popup-image-title-comment-rating span').onclick = () => {
-      document.querySelector('.popup-image-title-comment-rating').style.display = 'none';
-      document.querySelector('.popup-image').style.display = 'block';
-    }
   }
 });
+
+document.querySelector('.popup-image i').onclick = () => {
+  // document.querySelectorAll('.image-container img').forEach(image => {
+  //   document.querySelector('.popup-image-title-comment-rating img').src = image.getAttribute('src');
+  // })
+  document.querySelector('.popup-image-title-comment-rating img').src = document.querySelector('.popup-image img').getAttribute('src');
+  document.querySelector('.popup-image-title-comment-rating').setAttribute('style', 'display: flex; align-content: flex-start; justify-content: center; align-items: baseline; flex-direction: column; flex-wrap: nowrap;')
+
+  document.querySelector('.popup-image-title-comment-rating').style.display = 'block';
+    document.querySelector('.popup-image').style.display = 'none';
+  }
+
+
+  
+document.querySelector('.popup-image span').onclick = () => {
+  document.querySelector('.popup-image').style.display = 'none';
+  document.querySelector('.big-container').setAttribute('style', 'overflow : visble;')
+}
+
+
+document.querySelector('.popup-image-title-comment-rating span').onclick = () => {
+  document.querySelector('.popup-image-title-comment-rating').style.display = 'none';
+  document.querySelector('.popup-image').style.display = 'block';
+}
+
+
+
+
 
 
 //TITEL POPUP FORM

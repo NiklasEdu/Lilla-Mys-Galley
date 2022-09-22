@@ -262,7 +262,7 @@ form button {
   background: linear-gradient(110deg, #0f1829, #050218);
   padding: 10px;
   border-radius: 3%;
-  box-shadow: 0 0 10px rgb(37, 0, 138);
+  box-shadow: 0 0 10px rgb(0, 204, 255);
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -295,39 +295,52 @@ span#close{
 }
 
 .title{
-  position: relative;
-  text-decoration: none;
-  color: white;
-  padding: 8px 15px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-shadow: 0 0 5px white;  align-items: center;
-  text-align: center;
-  font-size: x-large;
+  left: auto;
+    right: 48%;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: 0 0 5px white;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    position: absolute;
+    top: 60%;
 }
 
 
 .comments{
-  text-decoration: none;
-  color: white;
-  padding: 8px 15px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-shadow: 0 0 5px white;
-  align-items: center;
-  text-align: center;
-  font-size: medium;
+  left: auto;
+    right: 43%;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: 0 0 5px white;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    position: absolute;
+    top: 69%;
 }
 
 .rating{
-  text-decoration: none;
-  color: white;
-  padding: 8px 15px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-shadow: 0 0 5px white;  align-items: center;
-  text-align: center;
-  font-size: medium;
+  left: auto;
+    right: 47%;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: 0 0 5px white;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+    position: absolute;
+    top: 78%;
 }
 
 .container .popup-image-title-comment-rating img {
@@ -338,7 +351,7 @@ span#close{
 }
 
 
-i {
+i{
   cursor: pointer;
 }
 
