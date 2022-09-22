@@ -99,13 +99,12 @@ body {
 .content{
     grid-column: auto / span 2;
   }
-
+/*
 img{
     /* display: block; */
     
 
-}
-
+/* } /*
 /* .content {
     position: absolute;
     top: 0;
