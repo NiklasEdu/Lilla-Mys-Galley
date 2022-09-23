@@ -170,13 +170,14 @@ img {
     position: absolute;
     color: white;
     top: 40%;
-    left: 30%;
+    left: 15%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     opacity: 0;
     transition: opacity 0.25em;
+    text-align: center;
 }
 
 .image__overlay:hover{
@@ -203,6 +204,9 @@ img {
 .image__title{
     font-size: 2em;
     font-weight: bold;
+    align-items: center;
+    width: 200px;
+    height: 200px;
 }
 
 .image__description{

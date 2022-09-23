@@ -25,6 +25,9 @@ const appDir = './json';
 //recieving a simple object and store as json file
 app.post('/resultat', (req, res) => {
 
+
+
+
   const b = req.body;
   writeJSON('resultat.json', b);
 

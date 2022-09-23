@@ -1,7 +1,7 @@
 //LIGTHBOX
 // Open the Modal
 
-const urlSrc = '..\\server\\json\\resultat.json';
+const urlSrc = '..\\server\\json\\json\\resultat.json';
 const urlGetPost = 'http://localhost:3000/resultat';
 
 let chilIdLive = this.chilidLive;
