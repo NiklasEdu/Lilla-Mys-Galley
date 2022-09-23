@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/slideShow.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Gallery</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="/html/index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="/html/albumPage.html">Album</a></li>
+                </ul>
+                <form>
+                <input type="text" name="search" id="search"
+                required placeholder="Enter your search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <!-- <button id="slideshow" class="active" onclick="carousel()">View slideshow</button> -->
+            <button id="slideshow" class="active" onclick="slideShow()">View slideshow</button>
+            <br>
+            </nav>
+        </header>
+
+        <div class="image-container">
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img1-small.jpg" srcset="/images/img1-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img2-small.jpg" srcset="/images/img2-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img3-small.jpg" srcset="/images/img3-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img4-small.jpg" srcset="/images/img4-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img5-small.jpg" srcset="/images/img5-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img6-small.jpg" srcset="/images/img6-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img7-small.jpg" srcset="/images/img7-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img8-small.jpg" srcset="/images/img8-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img9-small.jpg" srcset="/images/img9-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img10-small.jpg" srcset="/images/img10-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img11-small.jpg" srcset="/images/img11-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img12-small.jpg" srcset="/images/img12-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img13-small.jpg" srcset="/images/img13-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img14-small.jpg" srcset="/images/img14-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img15-small.jpg" srcset="/images/img15-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img16-small.jpg" srcset="/images/img16-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img17-small.jpg" srcset="/images/img17-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img18-small.jpg" srcset="/images/img18-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img19-small.jpg" srcset="/images/img19-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img20-small.jpg" srcset="/images/img20-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img21-small.jpg" srcset="/images/img21-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img22-small.jpg" srcset="/images/img22-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img23-small.jpg" srcset="/images/img23-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img24-small.jpg" srcset="/images/img24-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img25-small.jpg" srcset="/images/img25-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img26-small.jpg" srcset="/images/img26-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img27-small.jpg" srcset="/images/img27-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img28-small.jpg" srcset="/images/img28-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img29-small.jpg" srcset="/images/img29-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img30-small.jpg" srcset="/images/img30-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img31-small.jpg" srcset="/images/img31-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img32-small.jpg" srcset="/images/img32-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img33-small.jpg" srcset="/images/img33-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img34-small.jpg" srcset="/images/img34-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img35-small.jpg" srcset="/images/img35-large.jpg" alt=""></div></button>
+            <button class="image-btn"><div class="image"><img class="mySlides" src="/images/img36-small.jpg" srcset="/images/img36-large.jpg" alt=""></div></button>
+    
+    </div>
+
+        <div class="slide-show-container">
+            <span onclick="closeSlideShow()">&times;</span>
+        </div> 
+    </div>
+    
+    <script src="/JS/slideShow.js"></script>
+</body>
+</html>

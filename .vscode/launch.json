@@ -4,21 +4,69 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-<<<<<<< HEAD
+    {
+        "name": "Attach to Chrome",
+        "port": 9222,
+        "request": "attach",
+        "type": "chrome",
+        "webRoot": "${workspaceFolder}"
+    },
+         {
+            "type": "node",
+            "request": "launch",
+            "name": "node.js debugging",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/${relativeFile}"
+        },
+    {
+        "name": "Launch Edge",
+        "request": "launch",
+        "type": "msedge",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
+    },
+
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "msedge ../html/edwinsalbum.html",
+            "url": "http://localhost:5500/${relativeFileDirname}/../html/edwinsalbum.html",
+            "webRoot": "${workspaceFolder}"
+        },
         
+
         {
-            "type": "chrome",
+            "type": "node",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-=======
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\JS\\rate.js"
+        }
+        ,
+
         {
-            "type": "chrome",
+            "type": "msedge",
             "request": "launch",
-            "name": "Chrome ../index.html",
-            "url": "http://localhost:5500/${relativeFileDirname}/slideShow.html",
->>>>>>> 31fbb5669a74b50619997c3d355037ce60fc3079
+            "name": "msedge ../albumTest.html",
+            "url": "http://localhost:5500/${relativeFileDirname}/../albumTest.html",
             "webRoot": "${workspaceFolder}"
         }
+
+           ,
+
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "msedge ../albumPage1.html",
+            "url": "http://localhost:5500/${relativeFileDirname}/../albumPage1.html",
+            "webRoot": "${workspaceFolder}"
+        }
+        
+        
     ]
+    
 }

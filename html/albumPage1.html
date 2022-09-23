@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/albumTest.css">
+    </link>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body onload="onload(7)">
+    <div class="big-container">
+        <div class="container">
+            <header>
+                <h1>Lilla Mys Gallery</h1>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="/html/index.html">Home</a></li>
+                        <li><a href="#">About</a> </li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="/html/albumPage.html">Album</a></li>
+                        <li><a class="active" href="/html/slideShow.html">Slide Show</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- EDIT AND SAVE BUTTON -->
+            <!-- BUTTON 1 -->
+            <div class="gallery" id="gallery">
+                <div class="row">
+                    <div class="column">
+                        <div id="7G" class="animals"><img src="/images/img7-small.jpg" onclick="openModal(); currentSlide(1)" class="hover-shadow">
+                            <div class="overlay">
+                                <p class="resultatRate" id="7P"></p>
+                                <div class="ratings" id="7R">
+                                    <p id="7S" class="fillStar"></p>
+                                    <br>
+                                    <button href="#5" title="Give 5 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="5B">★</button>
+                                    <button href="#4" title="Give 4 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="4B">★</button>
+                                    <button href="#3" title="Give 3 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="3B">★</button>
+                                    <button href="#2" title="Give 2 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="2B">★</button>
+                                    <button href="#1" title="Give 1 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="1B">★</button>
+                                    <br>
+                                    <button class="add" type="button" submit="false" onclick="buttonGiver();"> Add
+                                        rating </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerAll">
+                            <p class="editP" id="edit7"><b></b></p>
+                            <p class="editDescP" id="editDesc7"><b></b></p>
+                            <button class="buttons" type="submit" id="edit-button7" onclick="clickON(7)">Edit</button>
+                            <button class="buttons" type="submit" id="end-editing7" onclick="clickEnd(7)">Done</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON 2 -->
+                <div class="row">
+                    <div class="column">
+                        <div id="8G" class="animals"><img src="/images/img8-small.jpg" onclick="openModal(); currentSlide(2)" class="hover-shadow">
+                            <div class="overlay">
+                                <p class="resultatRate" id="8P"></p>
+                                <div class="ratings" id="8R">
+                                    <p id="8S" class="fillStar"></p>
+                                    <br>
+                                    <button href="#5" title="Give 5 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="5B">★</button>
+                                    <button href="#4" title="Give 4 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="4B">★</button>
+                                    <button href="#3" title="Give 3 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="3B">★</button>
+                                    <button href="#2" title="Give 2 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="2B">★</button>
+                                    <button href="#1" title="Give 1 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="1B">★</button>
+                                    <br>
+                                    <button class="add" type="button" submit="false" onclick="buttonGiver();"> Add
+                                        rating </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerAll">
+                            <p class="editP" id="edit8"><b></b></p>
+                            <p class="editDescP" id="editDesc8"><b></b></p>
+                            <button class="buttons" type="submit" id="edit-button8" onclick="clickON(8)">Edit</button>
+                            <button class="buttons" type="submit" id="end-editing8" onclick="clickEnd(8)">Done</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON 3 -->
+                <div class="row">
+                    <div class="column">
+                        <div id="9G" class="animals"><img src="/images/img9-small.jpg"
+                                onclick="openModal(); currentSlide(3)" class="hover-shadow">
+                            <div class="overlay">
+                                <p class="resultatRate" id="9P"></p>
+                                <div class="ratings" id="9R">
+                                    <p id="9S" class="fillStar"></p>
+                                    <br>
+                                    <button href="#5" title="Give 5 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="5B">★</button>
+                                    <button href="#4" title="Give 4 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="4B">★</button>
+                                    <button href="#3" title="Give 3 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="3B">★</button>
+                                    <button href="#2" title="Give 2 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="2B">★</button>
+                                    <button href="#1" title="Give 1 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="1B">★</button>
+                                    <br>
+                                    <button class="add" type="button" submit="false" onclick="buttonGiver();"> Add
+                                        rating </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerAll">
+                            <p class="editP" id="edit9"><b></b></p>
+                            <p class="editDescP" id="editDesc9"><b></b></p>
+                            <button class="buttons" type="submit" id="edit-button9" onclick="clickON(9)">Edit</button>
+                            <button class="buttons" type="submit" id="end-editing9" onclick="clickEnd(9)">Done</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON 4 -->
+                <div class="row">
+                    <div class="column">
+                        <div id="10G" class="animals"><img src="/images/img10-small.jpg"
+                                onclick="openModal(); currentSlide(4)" class="hover-shadow">
+                            <div class="overlay">
+                                <p class="resultatRate" id="10P"></p>
+                                <div class="ratings" id="10R">
+                                    <p id="10S" class="fillStar"></p>
+                                    <br>
+                                    <button href="#5" title="Give 5 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="5B">★</button>
+                                    <button href="#4" title="Give 4 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="4B">★</button>
+                                    <button href="#3" title="Give 3 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="3B">★</button>
+                                    <button href="#2" title="Give 2 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="2B">★</button>
+                                    <button href="#1" title="Give 1 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="1B">★</button>
+                                    <br>
+                                    <button class="add" type="button" submit="false" onclick="buttonGiver();"> Add
+                                        rating </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerAll">
+                            <p class="editP" id="edit10"><b></b></p>
+                            <p class="editDescP" id="editDesc10"><b></b></p>
+                            <button class="buttons" type="submit" id="edit-button10" onclick="clickON(10)">Edit</button>
+                            <button class="buttons" type="submit" id="end-editing10" onclick="clickEnd(10)">Done</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON 5 -->
+                <div class="row">
+                    <div class="column">
+                        <div id="11G" class="animals"><img src="/images/img11-small.jpg"
+                                onclick="openModal(); currentSlide(5)" class="hover-shadow">
+                            <div class="overlay">
+                                <p class="resultatRate" id="11P"></p>
+                                <div class="ratings" id="11R">
+                                    <p id="11S" class="fillStar"></p>
+                                    <br>
+                                    <button href="#5" title="Give 5 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="5B">★</button>
+                                    <button href="#4" title="Give 4 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="4B">★</button>
+                                    <button href="#3" title="Give 3 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="3B">★</button>
+                                    <button href="#2" title="Give 2 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="2B">★</button>
+                                    <button href="#1" title="Give 1 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="1B">★</button>
+                                    <br>
+                                    <button class="add" type="button" submit="false" onclick="buttonGiver();"> Add
+                                        rating </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerAll">
+                            <p class="editP" id="edit11"><b></b></p>
+                            <p class="editDescP" id="editDesc11"><b></b></p>
+                            <button class="buttons" type="submit" id="edit-button11" onclick="clickON(11)">Edit</button>
+                            <button class="buttons" type="submit" id="end-editing11" onclick="clickEnd(11)">Done</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUTTON 6 -->
+                <div class="row">
+                    <div class="column">
+                        <div id="12G" class="animals"><img src="/images/img12-small.jpg"
+                                onclick="openModal(); currentSlide(6)" class="hover-shadow">
+                            <div class="overlay">
+                                <p class="resultatRate" id="12P"></p>
+                                <div class="ratings" id="12R">
+                                    <p id="12S" class="fillStar"></p>
+                                    <br>
+                                    <button href="#5" title="Give 5 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="5B">★</button>
+                                    <button href="#4" title="Give 4 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="4B">★</button>
+                                    <button href="#3" title="Give 3 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="3B">★</button>
+                                    <button href="#2" title="Give 2 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="2B">★</button>
+                                    <button href="#1" title="Give 1 stars" class="rateStar" type="button"
+                                        onclick="clickfunction(this.id, this.parentElement.id)" id="1B">★</button>
+                                    <br>
+                                    <button class="add" type="button" submit="false" onclick="buttonGiver();"> Add
+                                        rating </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerAll">
+                            <p class="editP" id="edit12"><b></b></p>
+                            <p class="editDescP" id="editDesc12"><b></b></p>
+                            <button class="buttons" type="submit" id="edit-button12" onclick="clickON(12)">Edit</button>
+                            <button class="buttons" type="submit" id="end-editing12"onclick="clickEnd(12)">Done</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <p id="mySlidesHeadline7">
+                            </p>
+                            <p id="mySlidesDescription7">
+                            </p>
+                            <img src="/images/img7-large.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <p id="mySlidesHeadline8">
+                            </p>
+                            <p id="mySlidesDescription8">
+                            </p>
+                            <img src="/images/img8-large.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <p id="mySlidesHeadline9">
+                            </p>
+                            <p id="mySlidesDescription9">
+                            </p>
+                            <img src="/images/img9-large.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <p id="mySlidesHeadline10">
+                            </p>
+                            <p id="mySlidesDescription10">
+                            </p>
+                            <img src="/images/img10-large.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <p id="mySlidesHeadline11">
+                            </p>
+                            <p id="mySlidesDescription11">
+                            </p>
+                            <img src="/images/img11-large.jpg">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <p id="mySlidesHeadline12">
+                            </p>
+                            <p id="mySlidesDescription12">
+                            </p>
+                            <img src="/images/img12-large.jpg" >
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="/images/img7-small.jpg" onclick="currentSlide(1)" alt=>
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="/images/img8-small.jpg" onclick="currentSlide(2)" alt=>
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="/images/img9-small.jpg" onclick="currentSlide(3)" alt=>
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="/images/img10-small.jpg" onclick="currentSlide(4)" alt=>
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="/images/img11-small.jpg" onclick="currentSlide(5)" alt=>
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="/images/img12-small.jpg" onclick="currentSlide(6)" alt=>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/JS/albumTest.js"></script>
+
+</html>

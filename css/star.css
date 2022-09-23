@@ -1,0 +1,66 @@
+/* Rating star */
+
+
+.rateStar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: Transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+}
+
+.ratings .rateStar {
+    float: right;
+    color: #aaa;
+    
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+    
+}
+
+
+.ratings .rateStar:hover,
+.ratings .rateStar:hover~.rateStar,
+.ratings .rateStar:focus,
+.ratings .rateStar:focus~.rateStar {
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+.ratings {
+    direction: rtl;
+    transform: scale(0.7);
+    top: 100%;
+    
+}
+
+.ratings .rateStar {
+    float: none;
+    top: 80%;
+}
+
+.ratings {
+    display: block;
+}
+
+.fillStar{
+color: orange;
+    letter-spacing: 15px;
+    direction: ltr;
+    position: absolute;
+    left: 73px;
+    right: auto;
+    top: -55px;
+    font-size: 25px;
+}
+
+
+/* ------------------------------------------------------------ */
