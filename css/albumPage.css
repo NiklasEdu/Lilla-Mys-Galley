@@ -169,14 +169,10 @@ img {
 }
 
 
-/*
-img{
-    /* display: block; */
-    
+/* img{
+    display: block;
+    } */
 
-/* } /*
-/* .content {
-=======
 .gallery-item {
     display: flex;
     height: 300px;
@@ -188,15 +184,15 @@ img{
 
 
 .image__overlay {
->>>>>>> 31fbb5669a74b50619997c3d355037ce60fc3079
     position: absolute;
     color: white;
     top: 40%;
-    left: 30%;
+    left: 16%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    text-align: center;
     opacity: 0;
     transition: opacity 0.25em;
 }
@@ -223,8 +219,11 @@ img{
 }
 
 .image__title{
+    width: 200px;
+    height: 100px;
     font-size: 2em;
     font-weight: bold;
+    align-items: center;
 }
 
 .image__description{
