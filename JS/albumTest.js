@@ -198,7 +198,7 @@ function printStars (divRes, i){
 
 }
 
-async function myFetch(url, method = null, body = null, e) {
+async function myFetch(url, method = null, body = null) {
 try {
 
     let res = await fetch(url, {
@@ -222,7 +222,7 @@ try {
 
   }
 
-  e.preventDefault();
+  // e.preventDefault();
 }
 
 async function onload(int) {
